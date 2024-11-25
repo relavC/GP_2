@@ -11,9 +11,9 @@ const vehicles = {
         hilux: {
             versiones: ['Base', 'Full', 'Off-Road'],
             datos: {
-                nuevo: { estado: 'Nuevo', kilometraje: '0 km' },
-                usado: { estado: 'Usado', kilometraje: '40,000 km' },
-                seminuevo: { estado: 'Seminuevo', kilometraje: '20,000 km' }
+                nuevo: { estado: 'Nuevo', kilometraje: '0 km', imagen: 'img/toyotahilux.jpg' },
+                usado: { estado: 'Usado', kilometraje: '40,000 km', imagen: 'img/toyotahilux.jpg' },
+                seminuevo: { estado: 'Seminuevo', kilometraje: '20,000 km', imagen: 'img/toyotahilux.jpg' }
             }
         }
     },
@@ -21,17 +21,17 @@ const vehicles = {
         fiesta: {
             versiones: ['Base', 'Titanium', 'ST'],
             datos: {
-                nuevo: { estado: 'Nuevo', kilometraje: '0 km' },
-                usado: { estado: 'Usado', kilometraje: '25,000 km' },
-                seminuevo: { estado: 'Seminuevo', kilometraje: '10,000 km' }
+                nuevo: { estado: 'Nuevo', kilometraje: '0 km', imagen: 'img/fordfiesta.jpg' },
+                usado: { estado: 'Usado', kilometraje: '25,000 km', imagen: 'img/fordfiesta.jpg' },
+                seminuevo: { estado: 'Seminuevo', kilometraje: '10,000 km', imagen: 'img/fordfiesta.jpg' }
             }
         },
         ranger: {
             versiones: ['Base', 'XLT', 'Wildtrak'],
             datos: {
-                nuevo: { estado: 'Nuevo', kilometraje: '0 km' },
-                usado: { estado: 'Usado', kilometraje: '50,000 km' },
-                seminuevo: { estado: 'Seminuevo', kilometraje: '30,000 km' }
+                nuevo: { estado: 'Nuevo', kilometraje: '0 km', imagen: 'img/fordranger.jpg' },
+                usado: { estado: 'Usado', kilometraje: '50,000 km', imagen: 'img/fordranger.jpg' },
+                seminuevo: { estado: 'Seminuevo', kilometraje: '30,000 km', imagen: 'img/fordranger.jpg' }
             }
         }
     },
@@ -39,17 +39,17 @@ const vehicles = {
         civic: {
             versiones: ['LX', 'EX', 'Sport'],
             datos: {
-                nuevo: { estado: 'Nuevo', kilometraje: '0 km' },
-                usado: { estado: 'Usado', kilometraje: '20,000 km' },
-                seminuevo: { estado: 'Seminuevo', kilometraje: '5,000 km' }
+                nuevo: { estado: 'Nuevo', kilometraje: '0 km', imagen: 'img/hondacivic.jpg' },
+                usado: { estado: 'Usado', kilometraje: '20,000 km', imagen: 'img/hondacivic.jpg' },
+                seminuevo: { estado: 'Seminuevo', kilometraje: '5,000 km', imagen: 'img/hondacivic.jpg' }
             }
         },
         crv: {
             versiones: ['LX', 'EX', 'Touring'],
             datos: {
-                nuevo: { estado: 'Nuevo', kilometraje: '0 km' },
-                usado: { estado: 'Usado', kilometraje: '35,000 km' },
-                seminuevo: { estado: 'Seminuevo', kilometraje: '12,000 km' }
+                nuevo: { estado: 'Nuevo', kilometraje: '0 km', imagen: 'img/hondacr-v.jpg' },
+                usado: { estado: 'Usado', kilometraje: '35,000 km', imagen: 'img/hondacr-v.jpg' },
+                seminuevo: { estado: 'Seminuevo', kilometraje: '12,000 km', imagen: 'img/hondacr-v.jpg' }
             }
         }
     }
