@@ -103,7 +103,7 @@ function compareVehicles() {
         }
     } else {
         comparisonResult.innerHTML = '<p>Por favor, selecciona todos los campos para comparar.</p>';
-    }   sss
+    }   
 }
 
 // Inicializar mostrando la sección de inicio al cargar la página
