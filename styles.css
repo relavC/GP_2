@@ -76,3 +76,13 @@ h1, h2 {
     max-width: 100%;
     height: auto;
 }
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+    
+    .navbar-brand {
+        margin-bottom: 10px; /* Espacio debajo del logo */
+    }
+}
