@@ -3,9 +3,9 @@ const vehicles = {
         corolla: {
             versiones: ['Base', 'Full', 'Sport'],
             datos: {
-                nuevo: { estado: 'Nuevo', kilometraje: '0 km' },
-                usado: { estado: 'Usado', kilometraje: '30,000 km' },
-                seminuevo: { estado: 'Seminuevo', kilometraje: '15,000 km' }
+                nuevo: { estado: 'Nuevo', kilometraje: '0 km', imagen: 'img/toyotacorolla.jpg' },
+                usado: { estado: 'Usado', kilometraje: '30,000 km', imagen: 'img/toyotacorolla.jpg' },
+                seminuevo: { estado: 'Seminuevo', kilometraje: '15,000 km', imagen: 'img/toyotacorolla.jpg' }
             }
         },
         hilux: {
@@ -99,11 +99,16 @@ function compareVehicles() {
         const vehicleData = vehicles[marca][modelo].datos;
         comparisonResult.innerHTML = `<h3>Comparación de ${modelo.charAt(0).toUpperCase() + modelo.slice(1)} ${version}</h3>`;
         for (const [key, value] of Object.entries(vehicleData)) {
-            comparisonResult.innerHTML += `<p>${value.estado} - Kilometraje: ${value.kilometraje}</p>`;
+            comparisonResult.innerHTML += `
+                <div>
+                    <p>${value.estado} - Kilometraje: ${value.kilometraje}</p>
+                    <img src="${value.imagen}" alt="Imagen de ${modelo} ${value.estado}" style="width:200px; height:auto;">
+                </div>
+            `;
         }
     } else {
         comparisonResult.innerHTML = '<p>Por favor, selecciona todos los campos para comparar.</p>';
-    }   
+    }
 }
 
 // Inicializar mostrando la sección de inicio al cargar la página
